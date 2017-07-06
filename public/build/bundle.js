@@ -78,6 +78,26 @@
 
 	var _componentsMarsPageJsx2 = _interopRequireDefault(_componentsMarsPageJsx);
 
+	var _componentsJupiterPageJsx = __webpack_require__(492);
+
+	var _componentsJupiterPageJsx2 = _interopRequireDefault(_componentsJupiterPageJsx);
+
+	var _componentsSaturnPageJsx = __webpack_require__(493);
+
+	var _componentsSaturnPageJsx2 = _interopRequireDefault(_componentsSaturnPageJsx);
+
+	var _componentsUranPageJsx = __webpack_require__(494);
+
+	var _componentsUranPageJsx2 = _interopRequireDefault(_componentsUranPageJsx);
+
+	var _componentsNeptunPageJsx = __webpack_require__(495);
+
+	var _componentsNeptunPageJsx2 = _interopRequireDefault(_componentsNeptunPageJsx);
+
+	var _componentsKarlikPageJsx = __webpack_require__(496);
+
+	var _componentsKarlikPageJsx2 = _interopRequireDefault(_componentsKarlikPageJsx);
+
 	_reactDom2['default'].render(_react2['default'].createElement(
 	    _reactRouter.Router,
 	    { history: _reactRouter.hashHistory },
@@ -87,7 +107,12 @@
 	        _react2['default'].createElement(_reactRouter.Route, { path: '/Mercur', component: _componentsMercurPageJsx2['default'] }),
 	        _react2['default'].createElement(_reactRouter.Route, { path: '/Venera', component: _componentsVeneraPageJsx2['default'] }),
 	        _react2['default'].createElement(_reactRouter.Route, { path: '/Zemlia', component: _componentsZemliaPageJsx2['default'] }),
-	        _react2['default'].createElement(_reactRouter.Route, { path: '/Mars', component: _componentsMarsPageJsx2['default'] })
+	        _react2['default'].createElement(_reactRouter.Route, { path: '/Mars', component: _componentsMarsPageJsx2['default'] }),
+	        _react2['default'].createElement(_reactRouter.Route, { path: '/Jupiter', component: _componentsJupiterPageJsx2['default'] }),
+	        _react2['default'].createElement(_reactRouter.Route, { path: '/Saturn', component: _componentsSaturnPageJsx2['default'] }),
+	        _react2['default'].createElement(_reactRouter.Route, { path: '/Uran', component: _componentsUranPageJsx2['default'] }),
+	        _react2['default'].createElement(_reactRouter.Route, { path: '/Neptun', component: _componentsNeptunPageJsx2['default'] }),
+	        _react2['default'].createElement(_reactRouter.Route, { path: '/Karlik', component: _componentsKarlikPageJsx2['default'] })
 	    )
 	), document.getElementById('mount-point'));
 
@@ -25451,7 +25476,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
-	    value: true
+					value: true
 	});
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -25467,63 +25492,108 @@
 	__webpack_require__(484);
 
 	var App = _react2['default'].createClass({
-	    displayName: 'App',
+					displayName: 'App',
 
-	    render: function render() {
-	        return _react2['default'].createElement(
-	            'div',
-	            { className: 'app' },
-	            _react2['default'].createElement(
-	                _reactBootstrap.Navbar,
-	                { inverse: true, collapseOnSelect: true },
-	                _react2['default'].createElement(
-	                    _reactBootstrap.Nav,
-	                    null,
-	                    _react2['default'].createElement(
-	                        _reactBootstrap.NavItem,
-	                        { eventKey: 1 },
-	                        _react2['default'].createElement(
-	                            _reactRouter.Link,
-	                            { to: '/Mercur' },
-	                            'Меркурий'
-	                        )
-	                    ),
-	                    _react2['default'].createElement(
-	                        _reactBootstrap.NavItem,
-	                        { eventKey: 2 },
-	                        _react2['default'].createElement(
-	                            _reactRouter.Link,
-	                            { to: '/Venera' },
-	                            'Венера'
-	                        )
-	                    ),
-	                    _react2['default'].createElement(
-	                        _reactBootstrap.NavItem,
-	                        { eventKey: 3 },
-	                        _react2['default'].createElement(
-	                            _reactRouter.Link,
-	                            { to: '/Zemlia' },
-	                            'Земля'
-	                        )
-	                    ),
-	                    _react2['default'].createElement(
-	                        _reactBootstrap.NavItem,
-	                        { eventKey: 4 },
-	                        _react2['default'].createElement(
-	                            _reactRouter.Link,
-	                            { to: '/Mars' },
-	                            'Марс'
-	                        )
-	                    )
-	                )
-	            ),
-	            _react2['default'].createElement(
-	                'div',
-	                { className: 'content' },
-	                this.props.children
-	            )
-	        );
-	    }
+					render: function render() {
+									return _react2['default'].createElement(
+													'div',
+													{ className: 'app' },
+													_react2['default'].createElement(
+																	_reactBootstrap.Navbar,
+																	{ inverse: true, collapseOnSelect: true },
+																	_react2['default'].createElement(
+																					_reactBootstrap.Nav,
+																					null,
+																					_react2['default'].createElement(
+																									_reactBootstrap.NavItem,
+																									{ eventKey: 1 },
+																									_react2['default'].createElement(
+																													_reactRouter.Link,
+																													{ to: '/Mercur' },
+																													'Меркурий'
+																									)
+																					),
+																					_react2['default'].createElement(
+																									_reactBootstrap.NavItem,
+																									{ eventKey: 2 },
+																									_react2['default'].createElement(
+																													_reactRouter.Link,
+																													{ to: '/Venera' },
+																													'Венера'
+																									)
+																					),
+																					_react2['default'].createElement(
+																									_reactBootstrap.NavItem,
+																									{ eventKey: 3 },
+																									_react2['default'].createElement(
+																													_reactRouter.Link,
+																													{ to: '/Zemlia' },
+																													'Земля'
+																									)
+																					),
+																					_react2['default'].createElement(
+																									_reactBootstrap.NavItem,
+																									{ eventKey: 4 },
+																									_react2['default'].createElement(
+																													_reactRouter.Link,
+																													{ to: '/Mars' },
+																													'Марс'
+																									)
+																					),
+																					_react2['default'].createElement(
+																									_reactBootstrap.NavItem,
+																									{ eventKey: 5 },
+																									_react2['default'].createElement(
+																													_reactRouter.Link,
+																													{ to: '/Jupiter' },
+																													'Юпитер'
+																									)
+																					),
+																					_react2['default'].createElement(
+																									_reactBootstrap.NavItem,
+																									{ eventKey: 6 },
+																									_react2['default'].createElement(
+																													_reactRouter.Link,
+																													{ to: '/Saturn' },
+																													'Сатурн'
+																									)
+																					),
+																					_react2['default'].createElement(
+																									_reactBootstrap.NavItem,
+																									{ eventKey: 7 },
+																									_react2['default'].createElement(
+																													_reactRouter.Link,
+																													{ to: '/Uran' },
+																													'Уран'
+																									)
+																					),
+																					_react2['default'].createElement(
+																									_reactBootstrap.NavItem,
+																									{ eventKey: 8 },
+																									_react2['default'].createElement(
+																													_reactRouter.Link,
+																													{ to: '/Neptun' },
+																													'Нептун'
+																									)
+																					),
+																					_react2['default'].createElement(
+																									_reactBootstrap.NavItem,
+																									{ eventKey: 9 },
+																									_react2['default'].createElement(
+																													_reactRouter.Link,
+																													{ to: '/Karlik' },
+																													'Карликовые планеты'
+																									)
+																					)
+																	)
+													),
+													_react2['default'].createElement(
+																	'div',
+																	{ className: 'content' },
+																	this.props.children
+													)
+									);
+					}
 	});
 
 	exports['default'] = App;
@@ -46896,6 +46966,911 @@
 	module.exports = exports['default'];
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "MarsPage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 492 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(148);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactBootstrap = __webpack_require__(224);
+
+	var AboutPage = _react2['default'].createClass({
+	  displayName: 'AboutPage',
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      null,
+	      _react2['default'].createElement(
+	        _reactBootstrap.Grid,
+	        null,
+	        _react2['default'].createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2['default'].createElement(
+	            _reactBootstrap.Col,
+	            { md: 5 },
+	            _react2['default'].createElement(
+	              _reactBootstrap.Carousel,
+	              null,
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/J01.png' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/J02.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/J03.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              )
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _reactBootstrap.Col,
+	            { md: 7 },
+	            _react2['default'].createElement(
+	              _reactBootstrap.Tabs,
+	              { defaultActiveKey: 1, bsStyle: 'tabs', bsSize: 'large', id: 'uncontrolled-tab-example' },
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 1, title: 'Общая информация', bsStyle: 'success' },
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Марс — четвёртая по удалённости от Солнца и седьмая по размерам планета Солнечной системы; масса планеты составляет 10,7 % массы Земли; объём — 0,15 объёма Земли, а средний линейный диаметр — 0,53 диаметра Земли. Названа в честь Марса — древнеримского бога войны, соответствующего древнегреческому Аресу. Иногда Марс называют «красной планетой» из-за красноватого оттенка поверхности, придаваемого ей оксидом железа.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Температура на планете колеблется от −153 °C на полюсе зимой и до более +20 °C на экваторе в полдень. Средняя температура составляет −50 °C.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Две трети поверхности Марса занимают светлые области, получившие название материков, около трети — тёмные участки, называемые морями. Моря сосредоточены главным образом в южном полушарии планеты, между 10 и 40° широты. В северном полушарии есть только два крупных моря — Ацидалийское и Большой Сирт.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Современные модели внутреннего строения Марса предполагают, что он состоит из коры со средней толщиной 50 км (максимальная оценка — не более 125 км), силикатной мантии и ядра радиусом, по разным оценкам, от 1480 до 1800 км.',
+	                  _react2['default'].createElement('br', null)
+	                )
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 2, title: 'Спутники' },
+	                _react2['default'].createElement(
+	                  _reactBootstrap.Tabs,
+	                  { defaultActiveKey: 1, bsStyle: 'tabs', id: 'uncontrolled-tab-example' },
+	                  _react2['default'].createElement(
+	                    _reactBootstrap.Tab,
+	                    { eventKey: 1, title: 'Фобос' },
+	                    _react2['default'].createElement('img', { alt: 'Fobos', src: 'img/MF01.gif', className: 'image' }),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Фо́бос — один из двух спутников Марса. Был открыт американским астрономом Асафом Холлом в 1877 году и назван в честь древнегреческого бога Фобоса, спутника бога войны Ареса.'
+	                    ),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Фобос имеет форму, близкую к трёхосному эллипсоиду, большая ось которого направлена на Марс. Размеры Фобоса составляют 26,8×22,4×18,4 км.'
+	                    )
+	                  ),
+	                  _react2['default'].createElement(
+	                    _reactBootstrap.Tab,
+	                    { eventKey: 2, title: 'Деймос' },
+	                    _react2['default'].createElement('img', { alt: 'Deymos', src: 'img/MF01.gif', className: 'image' }),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Де́ймос — один из двух спутников Марса (наряду с Фобосом). Был открыт американским астрономом Асафом Холлом в 1877 году и назван им в честь древнегреческого бога ужаса Деймоса, спутника бога войны Ареса.'
+	                    ),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Деймос имеет форму, приближающуюся к трёхосному эллипсоиду. Размеры составляют 15×12,2×10,4 км. В XX веке Деймос считался самым маленьким из известных в Солнечной системе спутников.'
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 3, title: 'История' },
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Первые наблюдения Марса проводились до изобретения телескопа. Это были позиционные наблюдения с целью определения положений планеты по отношению к звёздам. Существование Марса как блуждающего объекта в ночном небе было письменно засвидетельствовано древнеегипетскими астрономами в 1534 году до н. э.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Голландский астроном Христиан Гюйгенс первым составил карту поверхности Марса, отражающую множество деталей. 28 ноября 1659 года он сделал несколько рисунков Марса, на которых были отображены различные темные области, позже сопоставленные с плато Большой Сирт.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  ' Расцвет телескопических наблюдений Марса пришёлся на конец XIX — середину XX века. Во многом он обусловлен общественным интересом и известными научными спорами вокруг наблюдавшихся марсианских каналов.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'С 1960-х годов к Марсу для подробного изучения планеты с орбиты и фотографирования поверхности были направлены несколько автоматических межпланетных станций (АМС). Кроме того, продолжалось дистанционное зондирование Марса с Земли в большей части электромагнитного спектра с помощью наземных и орбитальных телескопов, например, в инфракрасном для определения состава поверхности, в ультрафиолетовом и субмиллиметровом диапазонах — для исследования состава атмосферы, в радиодиапазоне — для измерения скорости ветра.'
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'footer' },
+	            _react2['default'].createElement(
+	              'p',
+	              { className: 'footer_p' },
+	              'ГАЗОВЫЕ ГИГАНТЫ (ЮПИТЕР)'
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = AboutPage;
+	module.exports = exports['default'];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "JupiterPage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 493 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(148);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactBootstrap = __webpack_require__(224);
+
+	var AboutPage = _react2['default'].createClass({
+	  displayName: 'AboutPage',
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      null,
+	      _react2['default'].createElement(
+	        _reactBootstrap.Grid,
+	        null,
+	        _react2['default'].createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2['default'].createElement(
+	            _reactBootstrap.Col,
+	            { md: 5 },
+	            _react2['default'].createElement(
+	              _reactBootstrap.Carousel,
+	              null,
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/S01.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/S02.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/S03.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              )
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _reactBootstrap.Col,
+	            { md: 7 },
+	            _react2['default'].createElement(
+	              _reactBootstrap.Tabs,
+	              { defaultActiveKey: 1, bsStyle: 'tabs', bsSize: 'large', id: 'uncontrolled-tab-example' },
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 1, title: 'Общая информация', bsStyle: 'success' },
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Марс — четвёртая по удалённости от Солнца и седьмая по размерам планета Солнечной системы; масса планеты составляет 10,7 % массы Земли; объём — 0,15 объёма Земли, а средний линейный диаметр — 0,53 диаметра Земли. Названа в честь Марса — древнеримского бога войны, соответствующего древнегреческому Аресу. Иногда Марс называют «красной планетой» из-за красноватого оттенка поверхности, придаваемого ей оксидом железа.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Температура на планете колеблется от −153 °C на полюсе зимой и до более +20 °C на экваторе в полдень. Средняя температура составляет −50 °C.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Две трети поверхности Марса занимают светлые области, получившие название материков, около трети — тёмные участки, называемые морями. Моря сосредоточены главным образом в южном полушарии планеты, между 10 и 40° широты. В северном полушарии есть только два крупных моря — Ацидалийское и Большой Сирт.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Современные модели внутреннего строения Марса предполагают, что он состоит из коры со средней толщиной 50 км (максимальная оценка — не более 125 км), силикатной мантии и ядра радиусом, по разным оценкам, от 1480 до 1800 км.',
+	                  _react2['default'].createElement('br', null)
+	                )
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 2, title: 'Спутники' },
+	                _react2['default'].createElement(
+	                  _reactBootstrap.Tabs,
+	                  { defaultActiveKey: 1, bsStyle: 'tabs', id: 'uncontrolled-tab-example' },
+	                  _react2['default'].createElement(
+	                    _reactBootstrap.Tab,
+	                    { eventKey: 1, title: 'Фобос' },
+	                    _react2['default'].createElement('img', { alt: 'Fobos', src: 'img/MF01.gif', className: 'image' }),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Фо́бос — один из двух спутников Марса. Был открыт американским астрономом Асафом Холлом в 1877 году и назван в честь древнегреческого бога Фобоса, спутника бога войны Ареса.'
+	                    ),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Фобос имеет форму, близкую к трёхосному эллипсоиду, большая ось которого направлена на Марс. Размеры Фобоса составляют 26,8×22,4×18,4 км.'
+	                    )
+	                  ),
+	                  _react2['default'].createElement(
+	                    _reactBootstrap.Tab,
+	                    { eventKey: 2, title: 'Деймос' },
+	                    _react2['default'].createElement('img', { alt: 'Deymos', src: 'img/MF01.gif', className: 'image' }),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Де́ймос — один из двух спутников Марса (наряду с Фобосом). Был открыт американским астрономом Асафом Холлом в 1877 году и назван им в честь древнегреческого бога ужаса Деймоса, спутника бога войны Ареса.'
+	                    ),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Деймос имеет форму, приближающуюся к трёхосному эллипсоиду. Размеры составляют 15×12,2×10,4 км. В XX веке Деймос считался самым маленьким из известных в Солнечной системе спутников.'
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 3, title: 'История' },
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Первые наблюдения Марса проводились до изобретения телескопа. Это были позиционные наблюдения с целью определения положений планеты по отношению к звёздам. Существование Марса как блуждающего объекта в ночном небе было письменно засвидетельствовано древнеегипетскими астрономами в 1534 году до н. э.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Голландский астроном Христиан Гюйгенс первым составил карту поверхности Марса, отражающую множество деталей. 28 ноября 1659 года он сделал несколько рисунков Марса, на которых были отображены различные темные области, позже сопоставленные с плато Большой Сирт.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  ' Расцвет телескопических наблюдений Марса пришёлся на конец XIX — середину XX века. Во многом он обусловлен общественным интересом и известными научными спорами вокруг наблюдавшихся марсианских каналов.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'С 1960-х годов к Марсу для подробного изучения планеты с орбиты и фотографирования поверхности были направлены несколько автоматических межпланетных станций (АМС). Кроме того, продолжалось дистанционное зондирование Марса с Земли в большей части электромагнитного спектра с помощью наземных и орбитальных телескопов, например, в инфракрасном для определения состава поверхности, в ультрафиолетовом и субмиллиметровом диапазонах — для исследования состава атмосферы, в радиодиапазоне — для измерения скорости ветра.'
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'footer' },
+	            _react2['default'].createElement(
+	              'p',
+	              { className: 'footer_p' },
+	              'ГАЗОВЫЕ ГИГАНТЫ (САТУРН)'
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = AboutPage;
+	module.exports = exports['default'];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SaturnPage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 494 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(148);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactBootstrap = __webpack_require__(224);
+
+	var AboutPage = _react2['default'].createClass({
+	  displayName: 'AboutPage',
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      null,
+	      _react2['default'].createElement(
+	        _reactBootstrap.Grid,
+	        null,
+	        _react2['default'].createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2['default'].createElement(
+	            _reactBootstrap.Col,
+	            { md: 5 },
+	            _react2['default'].createElement(
+	              _reactBootstrap.Carousel,
+	              null,
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/M01.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/M02.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/M03.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              )
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _reactBootstrap.Col,
+	            { md: 7 },
+	            _react2['default'].createElement(
+	              _reactBootstrap.Tabs,
+	              { defaultActiveKey: 1, bsStyle: 'tabs', bsSize: 'large', id: 'uncontrolled-tab-example' },
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 1, title: 'Общая информация', bsStyle: 'success' },
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Марс — четвёртая по удалённости от Солнца и седьмая по размерам планета Солнечной системы; масса планеты составляет 10,7 % массы Земли; объём — 0,15 объёма Земли, а средний линейный диаметр — 0,53 диаметра Земли. Названа в честь Марса — древнеримского бога войны, соответствующего древнегреческому Аресу. Иногда Марс называют «красной планетой» из-за красноватого оттенка поверхности, придаваемого ей оксидом железа.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Температура на планете колеблется от −153 °C на полюсе зимой и до более +20 °C на экваторе в полдень. Средняя температура составляет −50 °C.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Две трети поверхности Марса занимают светлые области, получившие название материков, около трети — тёмные участки, называемые морями. Моря сосредоточены главным образом в южном полушарии планеты, между 10 и 40° широты. В северном полушарии есть только два крупных моря — Ацидалийское и Большой Сирт.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Современные модели внутреннего строения Марса предполагают, что он состоит из коры со средней толщиной 50 км (максимальная оценка — не более 125 км), силикатной мантии и ядра радиусом, по разным оценкам, от 1480 до 1800 км.',
+	                  _react2['default'].createElement('br', null)
+	                )
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 2, title: 'Спутники' },
+	                _react2['default'].createElement(
+	                  _reactBootstrap.Tabs,
+	                  { defaultActiveKey: 1, bsStyle: 'tabs', id: 'uncontrolled-tab-example' },
+	                  _react2['default'].createElement(
+	                    _reactBootstrap.Tab,
+	                    { eventKey: 1, title: 'Фобос' },
+	                    _react2['default'].createElement('img', { alt: 'Fobos', src: 'img/MF01.gif', className: 'image' }),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Фо́бос — один из двух спутников Марса. Был открыт американским астрономом Асафом Холлом в 1877 году и назван в честь древнегреческого бога Фобоса, спутника бога войны Ареса.'
+	                    ),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Фобос имеет форму, близкую к трёхосному эллипсоиду, большая ось которого направлена на Марс. Размеры Фобоса составляют 26,8×22,4×18,4 км.'
+	                    )
+	                  ),
+	                  _react2['default'].createElement(
+	                    _reactBootstrap.Tab,
+	                    { eventKey: 2, title: 'Деймос' },
+	                    _react2['default'].createElement('img', { alt: 'Deymos', src: 'img/MF01.gif', className: 'image' }),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Де́ймос — один из двух спутников Марса (наряду с Фобосом). Был открыт американским астрономом Асафом Холлом в 1877 году и назван им в честь древнегреческого бога ужаса Деймоса, спутника бога войны Ареса.'
+	                    ),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Деймос имеет форму, приближающуюся к трёхосному эллипсоиду. Размеры составляют 15×12,2×10,4 км. В XX веке Деймос считался самым маленьким из известных в Солнечной системе спутников.'
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 3, title: 'История' },
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Первые наблюдения Марса проводились до изобретения телескопа. Это были позиционные наблюдения с целью определения положений планеты по отношению к звёздам. Существование Марса как блуждающего объекта в ночном небе было письменно засвидетельствовано древнеегипетскими астрономами в 1534 году до н. э.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Голландский астроном Христиан Гюйгенс первым составил карту поверхности Марса, отражающую множество деталей. 28 ноября 1659 года он сделал несколько рисунков Марса, на которых были отображены различные темные области, позже сопоставленные с плато Большой Сирт.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  ' Расцвет телескопических наблюдений Марса пришёлся на конец XIX — середину XX века. Во многом он обусловлен общественным интересом и известными научными спорами вокруг наблюдавшихся марсианских каналов.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'С 1960-х годов к Марсу для подробного изучения планеты с орбиты и фотографирования поверхности были направлены несколько автоматических межпланетных станций (АМС). Кроме того, продолжалось дистанционное зондирование Марса с Земли в большей части электромагнитного спектра с помощью наземных и орбитальных телескопов, например, в инфракрасном для определения состава поверхности, в ультрафиолетовом и субмиллиметровом диапазонах — для исследования состава атмосферы, в радиодиапазоне — для измерения скорости ветра.'
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'footer' },
+	            _react2['default'].createElement(
+	              'p',
+	              { className: 'footer_p' },
+	              'ГАЗОВЫЕ ГИГАНТЫ (УРАН)'
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = AboutPage;
+	module.exports = exports['default'];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "UranPage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 495 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(148);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactBootstrap = __webpack_require__(224);
+
+	var AboutPage = _react2['default'].createClass({
+	  displayName: 'AboutPage',
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      null,
+	      _react2['default'].createElement(
+	        _reactBootstrap.Grid,
+	        null,
+	        _react2['default'].createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2['default'].createElement(
+	            _reactBootstrap.Col,
+	            { md: 5 },
+	            _react2['default'].createElement(
+	              _reactBootstrap.Carousel,
+	              null,
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/M01.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/M02.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/M03.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              )
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _reactBootstrap.Col,
+	            { md: 7 },
+	            _react2['default'].createElement(
+	              _reactBootstrap.Tabs,
+	              { defaultActiveKey: 1, bsStyle: 'tabs', bsSize: 'large', id: 'uncontrolled-tab-example' },
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 1, title: 'Общая информация', bsStyle: 'success' },
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Марс — четвёртая по удалённости от Солнца и седьмая по размерам планета Солнечной системы; масса планеты составляет 10,7 % массы Земли; объём — 0,15 объёма Земли, а средний линейный диаметр — 0,53 диаметра Земли. Названа в честь Марса — древнеримского бога войны, соответствующего древнегреческому Аресу. Иногда Марс называют «красной планетой» из-за красноватого оттенка поверхности, придаваемого ей оксидом железа.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Температура на планете колеблется от −153 °C на полюсе зимой и до более +20 °C на экваторе в полдень. Средняя температура составляет −50 °C.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Две трети поверхности Марса занимают светлые области, получившие название материков, около трети — тёмные участки, называемые морями. Моря сосредоточены главным образом в южном полушарии планеты, между 10 и 40° широты. В северном полушарии есть только два крупных моря — Ацидалийское и Большой Сирт.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Современные модели внутреннего строения Марса предполагают, что он состоит из коры со средней толщиной 50 км (максимальная оценка — не более 125 км), силикатной мантии и ядра радиусом, по разным оценкам, от 1480 до 1800 км.',
+	                  _react2['default'].createElement('br', null)
+	                )
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 2, title: 'Спутники' },
+	                _react2['default'].createElement(
+	                  _reactBootstrap.Tabs,
+	                  { defaultActiveKey: 1, bsStyle: 'tabs', id: 'uncontrolled-tab-example' },
+	                  _react2['default'].createElement(
+	                    _reactBootstrap.Tab,
+	                    { eventKey: 1, title: 'Фобос' },
+	                    _react2['default'].createElement('img', { alt: 'Fobos', src: 'img/MF01.gif', className: 'image' }),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Фо́бос — один из двух спутников Марса. Был открыт американским астрономом Асафом Холлом в 1877 году и назван в честь древнегреческого бога Фобоса, спутника бога войны Ареса.'
+	                    ),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Фобос имеет форму, близкую к трёхосному эллипсоиду, большая ось которого направлена на Марс. Размеры Фобоса составляют 26,8×22,4×18,4 км.'
+	                    )
+	                  ),
+	                  _react2['default'].createElement(
+	                    _reactBootstrap.Tab,
+	                    { eventKey: 2, title: 'Деймос' },
+	                    _react2['default'].createElement('img', { alt: 'Deymos', src: 'img/MF01.gif', className: 'image' }),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Де́ймос — один из двух спутников Марса (наряду с Фобосом). Был открыт американским астрономом Асафом Холлом в 1877 году и назван им в честь древнегреческого бога ужаса Деймоса, спутника бога войны Ареса.'
+	                    ),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Деймос имеет форму, приближающуюся к трёхосному эллипсоиду. Размеры составляют 15×12,2×10,4 км. В XX веке Деймос считался самым маленьким из известных в Солнечной системе спутников.'
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 3, title: 'История' },
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Первые наблюдения Марса проводились до изобретения телескопа. Это были позиционные наблюдения с целью определения положений планеты по отношению к звёздам. Существование Марса как блуждающего объекта в ночном небе было письменно засвидетельствовано древнеегипетскими астрономами в 1534 году до н. э.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Голландский астроном Христиан Гюйгенс первым составил карту поверхности Марса, отражающую множество деталей. 28 ноября 1659 года он сделал несколько рисунков Марса, на которых были отображены различные темные области, позже сопоставленные с плато Большой Сирт.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  ' Расцвет телескопических наблюдений Марса пришёлся на конец XIX — середину XX века. Во многом он обусловлен общественным интересом и известными научными спорами вокруг наблюдавшихся марсианских каналов.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'С 1960-х годов к Марсу для подробного изучения планеты с орбиты и фотографирования поверхности были направлены несколько автоматических межпланетных станций (АМС). Кроме того, продолжалось дистанционное зондирование Марса с Земли в большей части электромагнитного спектра с помощью наземных и орбитальных телескопов, например, в инфракрасном для определения состава поверхности, в ультрафиолетовом и субмиллиметровом диапазонах — для исследования состава атмосферы, в радиодиапазоне — для измерения скорости ветра.'
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'footer' },
+	            _react2['default'].createElement(
+	              'p',
+	              { className: 'footer_p' },
+	              'ГАЗОВЫЕ ГИГАНТЫ (НЕПТУН)'
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = AboutPage;
+	module.exports = exports['default'];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "NeptunPage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 496 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(148);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactBootstrap = __webpack_require__(224);
+
+	var AboutPage = _react2['default'].createClass({
+	  displayName: 'AboutPage',
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      null,
+	      _react2['default'].createElement(
+	        _reactBootstrap.Grid,
+	        null,
+	        _react2['default'].createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2['default'].createElement(
+	            _reactBootstrap.Col,
+	            { md: 5 },
+	            _react2['default'].createElement(
+	              _reactBootstrap.Carousel,
+	              null,
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/M01.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/M02.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Carousel.Item,
+	                null,
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/M03.jpg' }),
+	                _react2['default'].createElement(_reactBootstrap.Carousel.Caption, null)
+	              )
+	            )
+	          ),
+	          _react2['default'].createElement(
+	            _reactBootstrap.Col,
+	            { md: 7 },
+	            _react2['default'].createElement(
+	              _reactBootstrap.Tabs,
+	              { defaultActiveKey: 1, bsStyle: 'tabs', bsSize: 'large', id: 'uncontrolled-tab-example' },
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 1, title: 'Общая информация', bsStyle: 'success' },
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Марс — четвёртая по удалённости от Солнца и седьмая по размерам планета Солнечной системы; масса планеты составляет 10,7 % массы Земли; объём — 0,15 объёма Земли, а средний линейный диаметр — 0,53 диаметра Земли. Названа в честь Марса — древнеримского бога войны, соответствующего древнегреческому Аресу. Иногда Марс называют «красной планетой» из-за красноватого оттенка поверхности, придаваемого ей оксидом железа.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Температура на планете колеблется от −153 °C на полюсе зимой и до более +20 °C на экваторе в полдень. Средняя температура составляет −50 °C.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Две трети поверхности Марса занимают светлые области, получившие название материков, около трети — тёмные участки, называемые морями. Моря сосредоточены главным образом в южном полушарии планеты, между 10 и 40° широты. В северном полушарии есть только два крупных моря — Ацидалийское и Большой Сирт.',
+	                  _react2['default'].createElement('br', null)
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Современные модели внутреннего строения Марса предполагают, что он состоит из коры со средней толщиной 50 км (максимальная оценка — не более 125 км), силикатной мантии и ядра радиусом, по разным оценкам, от 1480 до 1800 км.',
+	                  _react2['default'].createElement('br', null)
+	                )
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 2, title: 'Спутники' },
+	                _react2['default'].createElement(
+	                  _reactBootstrap.Tabs,
+	                  { defaultActiveKey: 1, bsStyle: 'tabs', id: 'uncontrolled-tab-example' },
+	                  _react2['default'].createElement(
+	                    _reactBootstrap.Tab,
+	                    { eventKey: 1, title: 'Фобос' },
+	                    _react2['default'].createElement('img', { alt: 'Fobos', src: 'img/MF01.gif', className: 'image' }),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Фо́бос — один из двух спутников Марса. Был открыт американским астрономом Асафом Холлом в 1877 году и назван в честь древнегреческого бога Фобоса, спутника бога войны Ареса.'
+	                    ),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Фобос имеет форму, близкую к трёхосному эллипсоиду, большая ось которого направлена на Марс. Размеры Фобоса составляют 26,8×22,4×18,4 км.'
+	                    )
+	                  ),
+	                  _react2['default'].createElement(
+	                    _reactBootstrap.Tab,
+	                    { eventKey: 2, title: 'Деймос' },
+	                    _react2['default'].createElement('img', { alt: 'Deymos', src: 'img/MF01.gif', className: 'image' }),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Де́ймос — один из двух спутников Марса (наряду с Фобосом). Был открыт американским астрономом Асафом Холлом в 1877 году и назван им в честь древнегреческого бога ужаса Деймоса, спутника бога войны Ареса.'
+	                    ),
+	                    _react2['default'].createElement(
+	                      'p',
+	                      null,
+	                      'Деймос имеет форму, приближающуюся к трёхосному эллипсоиду. Размеры составляют 15×12,2×10,4 км. В XX веке Деймос считался самым маленьким из известных в Солнечной системе спутников.'
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2['default'].createElement(
+	                _reactBootstrap.Tab,
+	                { eventKey: 3, title: 'История' },
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Первые наблюдения Марса проводились до изобретения телескопа. Это были позиционные наблюдения с целью определения положений планеты по отношению к звёздам. Существование Марса как блуждающего объекта в ночном небе было письменно засвидетельствовано древнеегипетскими астрономами в 1534 году до н. э.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'Голландский астроном Христиан Гюйгенс первым составил карту поверхности Марса, отражающую множество деталей. 28 ноября 1659 года он сделал несколько рисунков Марса, на которых были отображены различные темные области, позже сопоставленные с плато Большой Сирт.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  ' Расцвет телескопических наблюдений Марса пришёлся на конец XIX — середину XX века. Во многом он обусловлен общественным интересом и известными научными спорами вокруг наблюдавшихся марсианских каналов.'
+	                ),
+	                _react2['default'].createElement(
+	                  'p',
+	                  null,
+	                  'С 1960-х годов к Марсу для подробного изучения планеты с орбиты и фотографирования поверхности были направлены несколько автоматических межпланетных станций (АМС). Кроме того, продолжалось дистанционное зондирование Марса с Земли в большей части электромагнитного спектра с помощью наземных и орбитальных телескопов, например, в инфракрасном для определения состава поверхности, в ультрафиолетовом и субмиллиметровом диапазонах — для исследования состава атмосферы, в радиодиапазоне — для измерения скорости ветра.'
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2['default'].createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2['default'].createElement(
+	            'div',
+	            { className: 'footer' },
+	            _react2['default'].createElement(
+	              'p',
+	              { className: 'footer_p' },
+	              'ПЛАНЕТЫ ЗЕМНОЙ ГРУППЫ (МАРС)'
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = AboutPage;
+	module.exports = exports['default'];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "KarlikPage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ })
 /******/ ]);
