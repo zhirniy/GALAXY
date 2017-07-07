@@ -15,17 +15,17 @@ const AboutPage = React.createClass({
 
            <Carousel>
         <Carousel.Item>
-          <img  alt="Terra" src='img/M01.jpg'/>
+          <img  alt="Terra" src='img/N01.jpg'/>
           <Carousel.Caption>
                 </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img alt="Terra" src='img/M02.jpg'/>
+          <img alt="Terra" src='img/N02.jpg'/>
           <Carousel.Caption>
                 </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img alt="Terra" src='img/M03.jpg'/>
+          <img alt="Terra" src='img/N03.jpg'/>
           <Carousel.Caption>
                   </Carousel.Caption>
         </Carousel.Item>
