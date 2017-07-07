@@ -101,6 +101,7 @@
 	_reactDom2['default'].render(_react2['default'].createElement(
 	    _reactRouter.Router,
 	    { history: _reactRouter.hashHistory },
+	    _react2['default'].createElement(_reactRouter.Redirect, { from: '/', to: '/Mercur' }),
 	    _react2['default'].createElement(
 	        _reactRouter.Route,
 	        { path: '/', component: _AppJsx2['default'] },
@@ -112,7 +113,8 @@
 	        _react2['default'].createElement(_reactRouter.Route, { path: '/Saturn', component: _componentsSaturnPageJsx2['default'] }),
 	        _react2['default'].createElement(_reactRouter.Route, { path: '/Uran', component: _componentsUranPageJsx2['default'] }),
 	        _react2['default'].createElement(_reactRouter.Route, { path: '/Neptun', component: _componentsNeptunPageJsx2['default'] }),
-	        _react2['default'].createElement(_reactRouter.Route, { path: '/Karlik', component: _componentsKarlikPageJsx2['default'] })
+	        _react2['default'].createElement(_reactRouter.Route, { path: '/Karlik', component: _componentsKarlikPageJsx2['default'] }),
+	        _react2['default'].createElement(_reactRouter.Route, { path: '/', component: _componentsMercurPageJsx2['default'] })
 	    )
 	), document.getElementById('mount-point'));
 
@@ -47795,7 +47797,7 @@
 	                _reactBootstrap.Tab,
 	                { eventKey: 3, title: 'Макемаке' },
 	                _react2['default'].createElement('img', { width: 300, height: 300, alt: 'Terra', src: 'img/Make.jpg', className: 'image' }),
-	                'br />',
+	                _react2['default'].createElement('br', null),
 	                _react2['default'].createElement(
 	                  'p',
 	                  null,
@@ -47806,7 +47808,7 @@
 	                _reactBootstrap.Tab,
 	                { eventKey: 4, title: 'Эрида' },
 	                _react2['default'].createElement('img', { width: 300, height: 300, alt: 'Terra', src: 'img/Erida.jpg', className: 'image' }),
-	                'br />',
+	                _react2['default'].createElement('br', null),
 	                _react2['default'].createElement(
 	                  'p',
 	                  null,
@@ -47817,7 +47819,7 @@
 	                _reactBootstrap.Tab,
 	                { eventKey: 5, title: 'Церера' },
 	                _react2['default'].createElement('img', { width: 300, height: 300, alt: 'Terra', src: 'img/Cerera.jpg', className: 'image' }),
-	                'br />',
+	                _react2['default'].createElement('br', null),
 	                _react2['default'].createElement(
 	                  'p',
 	                  null,

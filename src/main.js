@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import { Router, Route, hashHistory } from 'react-router';
+import { Router, Route, hashHistory, Redirect} from 'react-router';
 
 
 import App from './App.jsx';
@@ -21,6 +21,7 @@ import KarlikPage from './components/KarlikPage.jsx';
 
 ReactDOM.render(
     <Router history={hashHistory}>
+        <Redirect from='/' to='/Mercur' />
         <Route path='/' component={App}>
             <Route path='/Mercur' component={MercurPage} />
             <Route path='/Venera' component={VeneraPage} />
@@ -31,6 +32,7 @@ ReactDOM.render(
             <Route path='/Uran' component={UranPage} />
              <Route path='/Neptun' component={NeptunPage} />
             <Route path='/Karlik' component={KarlikPage} />
+            <Route path='/' component={MercurPage} />
            
 
     </Route>

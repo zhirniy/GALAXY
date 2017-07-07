@@ -12,6 +12,7 @@ const App = React.createClass({
             <Navbar inverse collapseOnSelect>
 			    <Nav>
 			            
+			           
 			            <NavItem eventKey={1}><Link to="/Mercur">Меркурий</Link></NavItem>
 			            <NavItem eventKey={2}><Link to="/Venera">Венера</Link></NavItem>
 			             <NavItem eventKey={3}><Link to="/Zemlia">Земля</Link></NavItem>

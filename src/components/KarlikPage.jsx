@@ -63,7 +63,7 @@ const AboutPage = React.createClass({
 
     <Tab eventKey={3} title="Макемаке">
    <img width={300} height={300}  alt="Terra" src='img/Make.jpg' className="image"/>
-    br /><p>Макемаке —  </p>
+    <br /><p>Макемаке —  </p>
     
 
     </Tab>
@@ -72,14 +72,14 @@ const AboutPage = React.createClass({
     
     <Tab eventKey={4} title="Эрида">
    <img width={300} height={300}  alt="Terra" src='img/Erida.jpg' className="image"/>
-    br /><p>Эрида —  </p>
+    <br /><p>Эрида —  </p>
     
 
     </Tab>
 
      <Tab eventKey={5} title="Церера">
    <img width={300} height={300}  alt="Terra" src='img/Cerera.jpg' className="image"/>
-    br /><p>Церера —  </p>
+    <br /><p>Церера —  </p>
     
 
     </Tab>
