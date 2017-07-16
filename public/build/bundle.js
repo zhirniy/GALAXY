@@ -98,13 +98,18 @@
 
 	var _componentsKarlikPageJsx2 = _interopRequireDefault(_componentsKarlikPageJsx);
 
+	var _componentsSunSystemJsx = __webpack_require__(497);
+
+	var _componentsSunSystemJsx2 = _interopRequireDefault(_componentsSunSystemJsx);
+
 	_reactDom2['default'].render(_react2['default'].createElement(
 	    _reactRouter.Router,
 	    { history: _reactRouter.hashHistory },
-	    _react2['default'].createElement(_reactRouter.Redirect, { from: '/', to: '/Mercur' }),
+	    _react2['default'].createElement(_reactRouter.Redirect, { from: '/', to: '/Sun' }),
 	    _react2['default'].createElement(
 	        _reactRouter.Route,
 	        { path: '/', component: _AppJsx2['default'] },
+	        _react2['default'].createElement(_reactRouter.Route, { path: '/Sun', component: _componentsSunSystemJsx2['default'] }),
 	        _react2['default'].createElement(_reactRouter.Route, { path: '/Mercur', component: _componentsMercurPageJsx2['default'] }),
 	        _react2['default'].createElement(_reactRouter.Route, { path: '/Venera', component: _componentsVeneraPageJsx2['default'] }),
 	        _react2['default'].createElement(_reactRouter.Route, { path: '/Zemlia', component: _componentsZemliaPageJsx2['default'] }),
@@ -25511,13 +25516,22 @@
 																									{ eventKey: 1 },
 																									_react2['default'].createElement(
 																													_reactRouter.Link,
+																													{ to: '/Sun' },
+																													'Солнечная система'
+																									)
+																					),
+																					_react2['default'].createElement(
+																									_reactBootstrap.NavItem,
+																									{ eventKey: 2 },
+																									_react2['default'].createElement(
+																													_reactRouter.Link,
 																													{ to: '/Mercur' },
 																													'Меркурий'
 																									)
 																					),
 																					_react2['default'].createElement(
 																									_reactBootstrap.NavItem,
-																									{ eventKey: 2 },
+																									{ eventKey: 3 },
 																									_react2['default'].createElement(
 																													_reactRouter.Link,
 																													{ to: '/Venera' },
@@ -25526,7 +25540,7 @@
 																					),
 																					_react2['default'].createElement(
 																									_reactBootstrap.NavItem,
-																									{ eventKey: 3 },
+																									{ eventKey: 4 },
 																									_react2['default'].createElement(
 																													_reactRouter.Link,
 																													{ to: '/Zemlia' },
@@ -25535,7 +25549,7 @@
 																					),
 																					_react2['default'].createElement(
 																									_reactBootstrap.NavItem,
-																									{ eventKey: 4 },
+																									{ eventKey: 5 },
 																									_react2['default'].createElement(
 																													_reactRouter.Link,
 																													{ to: '/Mars' },
@@ -25544,7 +25558,7 @@
 																					),
 																					_react2['default'].createElement(
 																									_reactBootstrap.NavItem,
-																									{ eventKey: 5 },
+																									{ eventKey: 6 },
 																									_react2['default'].createElement(
 																													_reactRouter.Link,
 																													{ to: '/Jupiter' },
@@ -25553,7 +25567,7 @@
 																					),
 																					_react2['default'].createElement(
 																									_reactBootstrap.NavItem,
-																									{ eventKey: 6 },
+																									{ eventKey: 7 },
 																									_react2['default'].createElement(
 																													_reactRouter.Link,
 																													{ to: '/Saturn' },
@@ -25562,7 +25576,7 @@
 																					),
 																					_react2['default'].createElement(
 																									_reactBootstrap.NavItem,
-																									{ eventKey: 7 },
+																									{ eventKey: 8 },
 																									_react2['default'].createElement(
 																													_reactRouter.Link,
 																													{ to: '/Uran' },
@@ -25571,7 +25585,7 @@
 																					),
 																					_react2['default'].createElement(
 																									_reactBootstrap.NavItem,
-																									{ eventKey: 8 },
+																									{ eventKey: 9 },
 																									_react2['default'].createElement(
 																													_reactRouter.Link,
 																													{ to: '/Neptun' },
@@ -25580,7 +25594,7 @@
 																					),
 																					_react2['default'].createElement(
 																									_reactBootstrap.NavItem,
-																									{ eventKey: 9 },
+																									{ eventKey: 10 },
 																									_react2['default'].createElement(
 																													_reactRouter.Link,
 																													{ to: '/Karlik' },
@@ -46033,7 +46047,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: silver;\n}\nNavItem {\n  font-size: 200%;\n  color: red;\n}\nButton {\n  color: red;\n}\n.LoginPage__image {\n  width: 100%;\n  margin: 0%;\n  padding: 0%;\n}\nNavbar {\n  margin: 0%;\n  padding: 0%;\n}\nNavItem {\n  margin: 0%;\n  padding: 0%;\n}\np {\n  font-style: italic;\n  font-size: 12pt;\n  text-indent: 35px;\n  text-align: justify;\n}\nTabs {\n  color: \"black\";\n}\n.footer {\n  color: lightblue;\n  border: 1px solid lightblue;\n  background-color: black;\n  margin: 1%;\n  padding: 0%;\n}\n.footer_p {\n  text-align: center;\n  font-size: 16pt;\n  font-style: normal;\n}\n.image {\n  float: left;\n  margin: 3%;\n}\n", ""]);
+	exports.push([module.id, "body {\n  background-color: silver;\n}\nNavItem {\n  font-size: 200%;\n  color: red;\n}\nButton {\n  color: red;\n}\n.LoginPage__image {\n  width: 100%;\n  margin: 0%;\n  padding: 0%;\n}\nNavbar {\n  margin: 0%;\n  padding: 0%;\n}\nNavItem {\n  margin: 0%;\n  padding: 0%;\n}\np {\n  font-style: italic;\n  font-size: 12pt;\n  text-indent: 35px;\n  text-align: justify;\n}\nTabs {\n  color: \"black\";\n}\n.footer {\n  color: lightblue;\n  border: 1px solid lightblue;\n  background-color: black;\n  margin: 1%;\n  padding: 0%;\n}\n.footer_p {\n  text-align: center;\n  font-size: 16pt;\n  font-style: normal;\n}\n.image {\n  float: left;\n  margin: 3%;\n}\n.sun {\n  width: 100%;\n  min-wwidth: 100%;\n  max-wwidth: 100%;\n}\n", ""]);
 
 	// exports
 
@@ -47040,25 +47054,13 @@
 	                _react2['default'].createElement(
 	                  'p',
 	                  null,
-	                  'Марс — четвёртая по удалённости от Солнца и седьмая по размерам планета Солнечной системы; масса планеты составляет 10,7 % массы Земли; объём — 0,15 объёма Земли, а средний линейный диаметр — 0,53 диаметра Земли. Названа в честь Марса — древнеримского бога войны, соответствующего древнегреческому Аресу. Иногда Марс называют «красной планетой» из-за красноватого оттенка поверхности, придаваемого ей оксидом железа.',
+	                  'Юпи́тер — пятая планета от Солнца, крупнейшая в Солнечной системе. Наряду с Сатурном, Ураном и Нептуном Юпитер классифицируется как газовый гигант.Его экваториальный радиус равен 71,4 тыс. км, что в 11,2 раза превышает радиус Земли.Масса Юпитера в 2,47 раза превышает суммарную массу всех остальных планет Солнечной системы, вместе взятых, в 317,8 раз — массу Земли Современное название Юпитера происходит от имени древнеримского верховного бога-громовержца.',
 	                  _react2['default'].createElement('br', null)
 	                ),
 	                _react2['default'].createElement(
 	                  'p',
 	                  null,
-	                  'Температура на планете колеблется от −153 °C на полюсе зимой и до более +20 °C на экваторе в полдень. Средняя температура составляет −50 °C.',
-	                  _react2['default'].createElement('br', null)
-	                ),
-	                _react2['default'].createElement(
-	                  'p',
-	                  null,
-	                  'Две трети поверхности Марса занимают светлые области, получившие название материков, около трети — тёмные участки, называемые морями. Моря сосредоточены главным образом в южном полушарии планеты, между 10 и 40° широты. В северном полушарии есть только два крупных моря — Ацидалийское и Большой Сирт.',
-	                  _react2['default'].createElement('br', null)
-	                ),
-	                _react2['default'].createElement(
-	                  'p',
-	                  null,
-	                  'Современные модели внутреннего строения Марса предполагают, что он состоит из коры со средней толщиной 50 км (максимальная оценка — не более 125 км), силикатной мантии и ядра радиусом, по разным оценкам, от 1480 до 1800 км.',
+	                  'На данный момент наибольшее признание получила следующая модель внутреннего строения Юпитера: 1.Атмосфера. Её делят на три слоя:внешний слой, состоящий из водорода;средний слой, состоящий из водорода (90 %) и гелия (10 %); нижний слой, состоящий из водорода, гелия и примесей аммиака, гидросульфида аммония и воды, образующих три слоя облаков: вверху — облака из оледеневшего аммиака (NH3). Его температура составляет около −145 °C, давление — около 1 атм; ниже — облака кристаллов гидросульфида аммония (NH4HS); в самом низу — водяной лёд и, возможно, жидкая вода. Давление в этом слое составляет около 1 атм, температура примерно −130 °C (143 К). Ниже этого уровня планета непрозрачна. 2.Слой металлического водорода. Температура этого слоя меняется от 6 300 до 21 000 К, а давление от 200 до 4000 ГПа. 3.Каменное ядро.',
 	                  _react2['default'].createElement('br', null)
 	                )
 	              ),
@@ -47106,22 +47108,17 @@
 	                _react2['default'].createElement(
 	                  'p',
 	                  null,
-	                  'Первые наблюдения Марса проводились до изобретения телескопа. Это были позиционные наблюдения с целью определения положений планеты по отношению к звёздам. Существование Марса как блуждающего объекта в ночном небе было письменно засвидетельствовано древнеегипетскими астрономами в 1534 году до н. э.'
+	                  'Планета была известна людям с глубокой древности, что нашло своё отражение в мифологии и религиозных верованиях различных культур: месопотамской, вавилонской, греческой и других.'
 	                ),
 	                _react2['default'].createElement(
 	                  'p',
 	                  null,
-	                  'Голландский астроном Христиан Гюйгенс первым составил карту поверхности Марса, отражающую множество деталей. 28 ноября 1659 года он сделал несколько рисунков Марса, на которых были отображены различные темные области, позже сопоставленные с плато Большой Сирт.'
+	                  'В начале XVII века Галилео Галилей изучал Юпитер с помощью изобретённого им телескопа и открыл четыре крупнейших спутника планеты. В 1660-х годах Джованни Кассини наблюдал пятна и полосы на «поверхности» гиганта.'
 	                ),
 	                _react2['default'].createElement(
 	                  'p',
 	                  null,
-	                  ' Расцвет телескопических наблюдений Марса пришёлся на конец XIX — середину XX века. Во многом он обусловлен общественным интересом и известными научными спорами вокруг наблюдавшихся марсианских каналов.'
-	                ),
-	                _react2['default'].createElement(
-	                  'p',
-	                  null,
-	                  'С 1960-х годов к Марсу для подробного изучения планеты с орбиты и фотографирования поверхности были направлены несколько автоматических межпланетных станций (АМС). Кроме того, продолжалось дистанционное зондирование Марса с Земли в большей части электромагнитного спектра с помощью наземных и орбитальных телескопов, например, в инфракрасном для определения состава поверхности, в ультрафиолетовом и субмиллиметровом диапазонах — для исследования состава атмосферы, в радиодиапазоне — для измерения скорости ветра.'
+	                  'Со второй половины XX века активно проводятся исследования Юпитера как с помощью наземных телескопов (в том числе и радиотелескопов), так и с помощью космических аппаратов — телескопа «Хаббл» и ряда зондов.Юпитер изучался исключительно аппаратами НАСА США. В конце 1980-х—начале 1990-х гг. был разработан проект советской АМС «Циолковский» для исследования Солнца и Юпитера, планировавшийся к запуску в 1990-х гг., но нереализованный ввиду распада СССР.С 1995 по 2003 год на орбите Юпитера находился «Галилео». С помощью этой миссии было получено множество новых данных. В частности, спускаемый аппарат впервые изучил атмосферу газовой планеты изнутри. На 2020 год запланировано осуществление силами НАСА и ЕКА межпланетной миссии по изучению галилеевых спутников Europa Jupiter System Mission (EJSM).'
 	                )
 	              )
 	            )
@@ -47851,6 +47848,40 @@
 	module.exports = exports['default'];
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "KarlikPage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ }),
+/* 497 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(148);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(160);
+
+	var SunSystem = _react2['default'].createClass({
+	    displayName: 'SunSystem',
+
+	    render: function render() {
+
+	        return _react2['default'].createElement('img', { alt: 'SunSystem', src: 'img/sun.jpg', className: 'sun' });
+	    }
+	});
+
+	exports['default'] = SunSystem;
+	module.exports = exports['default'];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("D:\\Проекты html\\сайт\\my-project\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SunSystem.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ })
 /******/ ]);

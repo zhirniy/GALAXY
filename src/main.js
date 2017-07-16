@@ -13,6 +13,7 @@ import SaturnPage from './components/SaturnPage.jsx';
 import UranPage from './components/UranPage.jsx';
 import NeptunPage from './components/NeptunPage.jsx';
 import KarlikPage from './components/KarlikPage.jsx';
+import SunSystem from './components/SunSystem.jsx';
 
 
 
@@ -21,8 +22,9 @@ import KarlikPage from './components/KarlikPage.jsx';
 
 ReactDOM.render(
     <Router history={hashHistory}>
-        <Redirect from='/' to='/Mercur' />
+        <Redirect from='/' to='/Sun' />
         <Route path='/' component={App}>
+            <Route path='/Sun' component={SunSystem} />
             <Route path='/Mercur' component={MercurPage} />
             <Route path='/Venera' component={VeneraPage} />
             <Route path='/Zemlia' component={ZemliaPage} />
