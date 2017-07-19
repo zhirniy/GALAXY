@@ -46046,7 +46046,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: silver;\n}\n.LoginPage__image {\n  width: 100%;\n  margin: 0%;\n  padding: 0%;\n}\np {\n  font-style: italic;\n  font-size: 12pt;\n  text-indent: 35px;\n  text-align: justify;\n}\nTabs {\n  color: \"black\";\n}\n.footer {\n  color: lightblue;\n  border: 1px solid lightblue;\n  background-color: black;\n  margin: 1%;\n  padding: 0%;\n}\n.footer_p {\n  text-align: center;\n  font-size: 16pt;\n  font-style: normal;\n}\n.image {\n  float: left;\n  margin: 3%;\n}\n.sun {\n  width: 100%;\n  min-wwidth: 100%;\n  max-wwidth: 100%;\n  margin-top: 0%;\n}\nimg {\n  margin-top: 3%;\n}\n", ""]);
+	exports.push([module.id, "body {\n  background-color: silver;\n}\n.LoginPage__image {\n  width: 100%;\n  margin: 0%;\n  padding: 0%;\n}\np {\n  font-style: italic;\n  font-size: 12pt;\n  text-indent: 35px;\n  text-align: justify;\n}\nTabs {\n  color: \"black\";\n}\n.footer {\n  color: lightblue;\n  border: 1px solid lightblue;\n  background-color: black;\n  margin: 1%;\n  padding: 0%;\n}\n.footer_p {\n  text-align: center;\n  font-size: 16pt;\n  font-style: normal;\n}\n.image {\n  float: left;\n  margin: 3%;\n  max-width: 50%;\n  min-width: 50%;\n  max-height: 50%;\n  min-height: 50%;\n}\n.sun {\n  width: 100%;\n  min-width: 100%;\n  max-width: 100%;\n  margin-top: 0%;\n}\nimg {\n  margin-top: 3%;\n  max-width: 100%;\n  min-width: 100%;\n  max-height: 100%;\n  min-height: 100%;\n}\n", ""]);
 
 	// exports
 
@@ -46394,7 +46394,7 @@
 	          { className: 'show-grid' },
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 5 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Carousel,
 	              null,
@@ -46420,7 +46420,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 7 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Tabs,
 	              { defaultActiveKey: 1, bsStyle: 'tabs', bsSize: 'large', id: 'uncontrolled-tab-example' },
@@ -46545,7 +46545,7 @@
 	          { className: 'show-grid' },
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 5 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Carousel,
 	              null,
@@ -46571,7 +46571,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 7 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Tabs,
 	              { defaultActiveKey: 1, bsStyle: 'tabs', bsSize: 'large', id: 'uncontrolled-tab-example' },
@@ -46695,7 +46695,7 @@
 	          { className: 'show-grid' },
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 5 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Carousel,
 	              null,
@@ -46721,7 +46721,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 7 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Tabs,
 	              { defaultActiveKey: 1, bsStyle: 'tabs', bsSize: 'large', id: 'uncontrolled-tab-example' },
@@ -46846,7 +46846,7 @@
 	          { className: 'show-grid' },
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 5 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Carousel,
 	              null,
@@ -46872,7 +46872,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 7 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Tabs,
 	              { defaultActiveKey: 1, bsStyle: 'tabs', bsSize: 'large', id: 'uncontrolled-tab-example' },
@@ -47032,7 +47032,7 @@
 	          { className: 'show-grid' },
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 5 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Carousel,
 	              null,
@@ -47058,7 +47058,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 7 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Tabs,
 	              { defaultActiveKey: 1, bsStyle: 'tabs', bsSize: 'large', id: 'uncontrolled-tab-example' },
@@ -47233,7 +47233,7 @@
 	          { className: 'show-grid' },
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 5 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Carousel,
 	              null,
@@ -47259,7 +47259,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 7 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Tabs,
 	              { defaultActiveKey: 1, bsStyle: 'tabs', bsSize: 'large', id: 'uncontrolled-tab-example' },
@@ -47474,7 +47474,7 @@
 	          { className: 'show-grid' },
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 5 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Carousel,
 	              null,
@@ -47500,7 +47500,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 7 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Tabs,
 	              { defaultActiveKey: 1, bsStyle: 'tabs', bsSize: 'large', id: 'uncontrolled-tab-example' },
@@ -47632,7 +47632,7 @@
 	          { className: 'show-grid' },
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 5 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Carousel,
 	              null,
@@ -47658,7 +47658,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 7 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Tabs,
 	              { defaultActiveKey: 1, bsStyle: 'tabs', bsSize: 'large', id: 'uncontrolled-tab-example' },
@@ -47795,7 +47795,7 @@
 	          { className: 'show-grid' },
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 5 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Carousel,
 	              null,
@@ -47833,7 +47833,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            _reactBootstrap.Col,
-	            { md: 7 },
+	            { md: 6 },
 	            _react2['default'].createElement(
 	              _reactBootstrap.Tabs,
 	              { defaultActiveKey: 1, bsStyle: 'tabs', id: 'uncontrolled-tab-example' },

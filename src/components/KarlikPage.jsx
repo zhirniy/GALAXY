@@ -11,7 +11,7 @@ const AboutPage = React.createClass({
          <div>
          <Grid>
         <Row className="show-grid">
-        <Col md={5}>
+        <Col md={6}>
 
            <Carousel>
         <Carousel.Item>
@@ -42,7 +42,7 @@ const AboutPage = React.createClass({
       </Carousel>
 
      </Col>
-        <Col md={7}>
+        <Col md={6}>
          <Tabs defaultActiveKey={1} bsStyle="tabs" id="uncontrolled-tab-example">
     <Tab eventKey={1} title="Плутон" bsStyle="success">
    
