@@ -103,7 +103,7 @@ const AboutPage = React.createClass({
 
       <Row className="show-grid">
        
-        <div className="footer">
+        <div className="footer_k">
         <p className="footer_p">
         КАРЛИКОВЫЕ ПЛАНЕТЫ
         </p>

@@ -123,7 +123,7 @@ const AboutPage = React.createClass({
 
       <Row className="show-grid">
        
-        <div className="footer">
+        <div className="footer_g">
         <p className="footer_p">
         ГАЗОВЫЕ ГИГАНТЫ (САТУРН)
         </p>

@@ -33,21 +33,157 @@
 
 
 
- .navbar-inverse .navbar-nav>li>a{
+ .navbar-inverse .navbar-nav>li>a[href="#/Karlik"]{
  	color:white;
  	
  }
 
-  .navbar-inverse .navbar-nav>li>a:hover{
+  .navbar-inverse .navbar-nav>li>a[href="#/Karlik"]:hover{
  	color:gray;
  	
  }
 
-  .navbar-inverse .navbar-nav>li>a:focus{
+  .navbar-inverse .navbar-nav>li>a[href="#/Karlik"]:focus{
  	color:gray;
  	
  }
+
+ .navbar-inverse .navbar-nav>li>a[href="#/Sun"]{
+ 	color:white;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Sun"]:hover{
+ 	color:yellow;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Sun"]:focus{
+ 	color:yellow;
+ 	
+ }
+
+
+ .navbar-inverse .navbar-nav>li>a[href="#/Mercur"]{
+ 	color:white;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Mercur"]:hover{
+ 	color:lightblue;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Mercur"]:focus{
+ 	color:lightblue;
+ 	
+ }
+
+ .navbar-inverse .navbar-nav>li>a[href="#/Venera"]{
+ 	color:white;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Venera"]:hover{
+ 	color:lightblue;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Venera"]:focus{
+ 	color:lightblue;
+ 	
+ }
+
+.navbar-inverse .navbar-nav>li>a[href="#/Zemlia"]{
+ 	color:white;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Zemlia"]:hover{
+ 	color:lightblue;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Zemlia"]:focus{
+ 	color:lightblue;
+ 	
+ }
+
+.navbar-inverse .navbar-nav>li> a[href="#/Mars"]{
+ 	color:white;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Mars"]:hover{
+ 	color:lightblue;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Mars"]:focus{
+ 	color:lightblue;
+ 	
+ }
   
+.navbar-inverse .navbar-nav>li> a[href="#/Jupiter"]{
+ 	color:white;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Jupiter"]:hover{
+ 	color:orange;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Jupiter"]:focus{
+ 	color:orange;
+ 	
+ }
+
+ .navbar-inverse .navbar-nav>li> a[href="#/Saturn"]{
+ 	color:white;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Saturn"]:hover{
+ 	color:orange;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Saturn"]:focus{
+ 	color:orange;
+ 	
+ }
+
+ .navbar-inverse .navbar-nav>li> a[href="#/Uran"]{
+ 	color:white;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Uran"]:hover{
+ 	color:orange;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Uran"]:focus{
+ 	color:orange;
+ 	
+ }
+
+ .navbar-inverse .navbar-nav>li> a[href="#/Neptun"]{
+ 	color:white;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Neptun"]:hover{
+ 	color:orange;
+ 	
+ }
+
+  .navbar-inverse .navbar-nav>li>a[href="#/Neptun"]:focus{
+ 	color:orange;
+ 	
+ }
+
 
  
  
