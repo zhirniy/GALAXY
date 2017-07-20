@@ -14,8 +14,14 @@
      padding: 0px; 
      margin-right: auto;
      margin-left: auto;
-     width: 90%;
+     width: 75%;
+
+
      
+}
+
+#z,#me, #v,#m,#j,#u,#n,#s{
+	margin-bottom: 10%;
 }
 
 .navbar-nav>li>a {
