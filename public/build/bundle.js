@@ -47866,7 +47866,7 @@
 	              _react2['default'].createElement(
 	                _reactBootstrap.Tab,
 	                { eventKey: 1, title: 'Плутон', bsStyle: 'success' },
-	                _react2['default'].createElement('img', { className: 'image', alt: 'Terra', src: 'img/PLUT.jpg', className: 'image' }),
+	                _react2['default'].createElement('img', { className: 'image', alt: 'Terra', src: 'img/PLUT.jpg' }),
 	                _react2['default'].createElement('br', null),
 	                _react2['default'].createElement(
 	                  'p',
@@ -47878,7 +47878,7 @@
 	              _react2['default'].createElement(
 	                _reactBootstrap.Tab,
 	                { eventKey: 2, title: 'Хаумеа' },
-	                _react2['default'].createElement('img', { className: 'image', alt: 'Terra', src: 'img/Haumeya.jpg', className: 'image' }),
+	                _react2['default'].createElement('img', { className: 'image', alt: 'Terra', src: 'img/Haumeya.jpg' }),
 	                _react2['default'].createElement('br', null),
 	                _react2['default'].createElement(
 	                  'p',
@@ -47889,7 +47889,7 @@
 	              _react2['default'].createElement(
 	                _reactBootstrap.Tab,
 	                { eventKey: 3, title: 'Макемаке' },
-	                _react2['default'].createElement('img', { className: 'image', alt: 'Terra', src: 'img/Make.jpg', className: 'image' }),
+	                _react2['default'].createElement('img', { className: 'image', alt: 'Terra', src: 'img/Make.jpg' }),
 	                _react2['default'].createElement('br', null),
 	                _react2['default'].createElement(
 	                  'p',
@@ -47900,7 +47900,7 @@
 	              _react2['default'].createElement(
 	                _reactBootstrap.Tab,
 	                { eventKey: 4, title: 'Эрида' },
-	                _react2['default'].createElement('img', { className: 'image', alt: 'Terra', src: 'img/Erida.jpg', className: 'image' }),
+	                _react2['default'].createElement('img', { className: 'image', alt: 'Terra', src: 'img/Erida.jpg' }),
 	                _react2['default'].createElement('br', null),
 	                _react2['default'].createElement(
 	                  'p',
@@ -47911,7 +47911,7 @@
 	              _react2['default'].createElement(
 	                _reactBootstrap.Tab,
 	                { eventKey: 5, title: 'Церера' },
-	                _react2['default'].createElement('img', { width: 300, height: 300, alt: 'Terra', src: 'img/Cerera.jpg', className: 'image' }),
+	                _react2['default'].createElement('img', { alt: 'Terra', src: 'img/Cerera.jpg', className: 'image' }),
 	                _react2['default'].createElement('br', null),
 	                _react2['default'].createElement(
 	                  'p',
