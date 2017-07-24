@@ -1,4 +1,9 @@
 
+body{
+  background-image: url(img/body.jpg);
+  background-repeat: cover;
+}
+
 .navbar {
  	
  	font-size:13pt;
@@ -20,8 +25,9 @@
      
 }
 
-#z,#me, #v,#m,#j,#u,#n,#s{
-	margin-bottom: 10%;
+#z,#me, #v,#m,#j,#u,#n,#s,#uncontrolled-tab-example{
+	margin-top: 2%;
+  margin-bottom: 10%;
 }
 
 .navbar-nav>li>a {
@@ -37,8 +43,8 @@
 }
 
 
-nav-tabs{
-    border-bottom: 5px;
+.nav-tabs{
+    border-bottom: none;
 }
 
 
@@ -46,15 +52,17 @@ nav-tabs{
 .nav-tabs>li>a{
 color: white;
 font-size:12pt; 
-background-color: #2F4F4F; 
+background-color: black;
+border: 1px solid black; 
 }
 
-#me>.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+   top:10px;
     color: lightblue;
     cursor: default;
    background-color: #2F4F4F;
-    border: 1px solid #ddd;
-    border-bottom-color: transparent;
+    border: 3px solid black;
+    border-bottom-color: none;
     font-size:12pt;
 }
 
