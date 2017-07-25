@@ -1,7 +1,7 @@
 
 body{
   background-image: url(img/body.jpg);
-  background-repeat: cover;
+  background-size: 100%;
 }
 
 .navbar {
@@ -20,14 +20,22 @@ body{
      margin-right: auto;
      margin-left: auto;
      width: 75%;
-
-
      
+  }   
+
+.col-md-7 {
+overflow-y: auto;
+height: 500px;
 }
+     
+
 
 #z,#me, #v,#m,#j,#u,#n,#s,#uncontrolled-tab-example{
 	margin-top: 2%;
   margin-bottom: 10%;
+ 
+  
+  
 }
 
 .navbar-nav>li>a {
