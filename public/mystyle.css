@@ -1,4 +1,4 @@
-
+@media screen and (max-width: 1280px){
 body{
   background-image: url(img/body.jpg);
   background-size: 100%;
@@ -73,64 +73,82 @@ border: 1px solid black;
     border-bottom-color: none;
     font-size:12pt;
 }
+}
 
+@media screen and (min-width: 1280px){
+body{
+  background-image: url(img/body.jpg);
+  background-size: 100%;
+}
 
+.navbar {
+  
+  font-size:13pt;
+ }  
 
-
-  .navbar-inverse .navbar-nav>li>a[href="#/Karlik"]:hover,
-  .navbar-inverse .navbar-nav>li>a[href="#/Karlik"]:focus
-  {
- 	color:lightblue;
-  }
-
-   
-  .navbar-inverse .navbar-nav>li>a[href="#/Sun"]:hover,
-  .navbar-inverse .navbar-nav>li>a[href="#/Sun"]:focus
-  {
- 	color:lightblue;
- 	
- }
-
-  .navbar-inverse .navbar-nav>li>a[href="#/Sun"],
- .navbar-inverse .navbar-nav>li>a[href="#/Mercur"], 
- .navbar-inverse .navbar-nav>li>a[href="#/Venera"],
- .navbar-inverse .navbar-nav>li>a[href="#/Zemlia"],
- .navbar-inverse .navbar-nav>li>a[href="#/Mars"],
- .navbar-inverse .navbar-nav>li>a[href="#/Jupiter"],
- .navbar-inverse .navbar-nav>li>a[href="#/Saturn"],
- .navbar-inverse .navbar-nav>li>a[href="#/Uran"],
- .navbar-inverse .navbar-nav>li>a[href="#/Neptun"],
- .navbar-inverse .navbar-nav>li>a[href="#/Karlik"]
- {
- 	color:white;
- }
-
-  .navbar-inverse .navbar-nav>li>a[href="#/Mercur"]:hover, 
-  .navbar-inverse .navbar-nav>li>a[href="#/Mercur"]:focus,
-  .navbar-inverse .navbar-nav>li>a[href="#/Venera"]:hover,
-  .navbar-inverse .navbar-nav>li>a[href="#/Venera"]:focus,
-  .navbar-inverse .navbar-nav>li>a[href="#/Zemlia"]:hover,
-  .navbar-inverse .navbar-nav>li>a[href="#/Zemlia"]:focus,
-  .navbar-inverse .navbar-nav>li>a[href="#/Mars"]:hover,
-  .navbar-inverse .navbar-nav>li>a[href="#/Mars"]:focus
-  {
- 	color:lightblue; 	
+ .navbar-inverse {
+  background-color:black;
+  margin-bottom: 0%;
  }
 
 
+ .container {
+     padding: 0px; 
+     margin-right: auto;
+     margin-left: auto;
+     width: 75%;
+     
+  }   
 
-.navbar-inverse .navbar-nav>li>a[href="#/Jupiter"]:hover, 
-  .navbar-inverse .navbar-nav>li>a[href="#/Jupiter"]:focus,
-  .navbar-inverse .navbar-nav>li>a[href="#/Saturn"]:hover,
-  .navbar-inverse .navbar-nav>li>a[href="#/Saturn"]:focus,
-  .navbar-inverse .navbar-nav>li>a[href="#/Uran"]:hover,
-  .navbar-inverse .navbar-nav>li>a[href="#/Uran"]:focus,
-  .navbar-inverse .navbar-nav>li>a[href="#/Neptun"]:hover,
-  .navbar-inverse .navbar-nav>li>a[href="#/Neptun"]:focus
-  {
-  color:lightblue; 
- }
+.col-md-7 {
+overflow-y: auto;
+height: 400px;
+}
+     
+
+
+#z,#me, #v,#m,#j,#u,#n,#s,#uncontrolled-tab-example{
+  margin-top: 2%;
+  margin-bottom: 10%;
  
+  
+  
+}
+
+.navbar-nav>li>a {
+     padding-top: 5px; 
+     padding-bottom: 5px; 
+     line-height: 15px; 
+}
+
+.nav>li>a {
+ position: static; 
+ display: block; 
+ padding: 5px; 
+}
 
 
+.nav-tabs{
+    border-bottom: none;
+}
+
+
+
+.nav-tabs>li>a{
+color: white;
+font-size:12pt; 
+background-color: black;
+border: 1px solid black; 
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+   top:10px;
+    color: lightblue;
+    cursor: default;
+   background-color: #2F4F4F;
+    border: 3px solid black;
+    border-bottom-color: none;
+    font-size:12pt;
+}
+}
 
