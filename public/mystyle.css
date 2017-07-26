@@ -25,7 +25,7 @@ body{
 
 .col-md-7 {
 overflow-y: auto;
-height: 750px;
+height: 400px;
 }
      
 
@@ -76,7 +76,7 @@ border: 1px solid black;
 }
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1281px){
 body{
   background-image: url(img/body.jpg);
   background-size: 100%;
@@ -103,7 +103,7 @@ body{
 
 .col-md-7 {
 overflow-y: auto;
-height: 400px;
+height: 600px;
 }
      
 
