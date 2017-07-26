@@ -42,7 +42,6 @@ height: 400px;
      padding-top: 5px; 
      padding-bottom: 5px; 
      line-height: 15px; 
-	color:white;
 }
 
 .nav>li>a {
@@ -74,6 +73,9 @@ border: 1px solid black;
     border-bottom-color: none;
     font-size:12pt;
 }
+.navbar-inverse .navbar-nav>li>a{
+  color: white;
+}
 }
 
 @media screen and (min-width: 1281px){
@@ -85,11 +87,13 @@ body{
 .navbar {
   
   font-size:13pt;
+  color:white;
  }  
 
  .navbar-inverse {
   background-color:black;
   margin-bottom: 0%;
+  color:white;
  }
 
 
@@ -103,7 +107,7 @@ body{
 
 .col-md-7 {
 overflow-y: auto;
-height: 600px;
+height: 750px;
 }
      
 
@@ -120,12 +124,14 @@ height: 600px;
      padding-top: 5px; 
      padding-bottom: 5px; 
      line-height: 15px; 
+     color:white;
 }
 
 .nav>li>a {
  position: static; 
  display: block; 
  padding: 5px; 
+ color:white;
 }
 
 
@@ -151,5 +157,14 @@ border: 1px solid black;
     border-bottom-color: none;
     font-size:12pt;
 }
+
+.navbar-inverse .navbar-nav>li>a{
+  color: white;
 }
+}
+
+
+ 
+
+
 
