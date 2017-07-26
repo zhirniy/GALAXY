@@ -80,14 +80,14 @@ border: 1px solid black;
   .navbar-inverse .navbar-nav>li>a[href="#/Karlik"]:hover,
   .navbar-inverse .navbar-nav>li>a[href="#/Karlik"]:focus
   {
- 	color:gray;
+ 	color:lightblue;
   }
 
    
   .navbar-inverse .navbar-nav>li>a[href="#/Sun"]:hover,
   .navbar-inverse .navbar-nav>li>a[href="#/Sun"]:focus
   {
- 	color:yellow;
+ 	color:lightblue;
  	
  }
 
@@ -128,7 +128,7 @@ border: 1px solid black;
   .navbar-inverse .navbar-nav>li>a[href="#/Neptun"]:hover,
   .navbar-inverse .navbar-nav>li>a[href="#/Neptun"]:focus
   {
-  color:orange;  
+  color:lightblue; 
  }
  
 
