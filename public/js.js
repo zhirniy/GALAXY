@@ -11,9 +11,10 @@ window.onload = function () {
       var a7 = document.querySelectorAll( 'a[href="#/Uran"]' )[0];
       var a8 = document.querySelectorAll( 'a[href="#/Neptun"]' )[0];
       var a9 = document.querySelectorAll( 'a[href="#/Karlik"]' )[0];
+       
 
       var arr  =[a0,a1,a2,a3,a4,a5,a6,a7,a8,a9];
-	
+     
      
       
 	 a0.addEventListener("click",
@@ -51,14 +52,7 @@ window.onload = function () {
      for(var i =0; i < arr.length; i++){
     arr[i].style.color = "white";}
     arr[a].style.color = "lightblue";
-    arr[a].style.fontSize = "large";
-    if (a==0){
-    	 document.getElementById("body").style.backgroundImage = "none"; 
-         document.getElementById("body").style.backgroundColor = "black";
-    }
-    else{
-    	 document.getElementById("body").style.backgroundImage = "url('body.jpg')";
-    }
+    arr[a].style.fontSize = "large";  
 
 }
 }
