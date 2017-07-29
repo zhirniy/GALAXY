@@ -11,10 +11,11 @@ window.onload = function () {
       var a7 = document.querySelectorAll( 'a[href="#/Uran"]' )[0];
       var a8 = document.querySelectorAll( 'a[href="#/Neptun"]' )[0];
       var a9 = document.querySelectorAll( 'a[href="#/Karlik"]' )[0];
-       var a10 = document.getElementsByTagName("body")[0];
+      var a10 = document.getElementsByTagName("body")[0];
+      var a11 = document.querySelectorAll('div[data-reactid=".0.1.0"]')[0];
 
       var arr  =[a0,a1,a2,a3,a4,a5,a6,a7,a8,a9];
-     a10.style.backgroundColor = "black";
+     
 	
      
       
@@ -56,6 +57,7 @@ window.onload = function () {
     arr[a].style.fontSize = "large";
     if (a==0){
     	   a10.style.backgroundColor = "black";
+	   a10.style.backgroundImage = "none";
     }
     else{
        a10.style.backgroundColor = "black";
