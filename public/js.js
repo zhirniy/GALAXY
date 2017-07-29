@@ -62,7 +62,7 @@ window.onload = function () {
 	   a10.style.backgroundImage = "none";
     }
     else{
-       a10.style.backgroundColor = "black";
+       
     	 a10.style.backgroundImage = "url('body.jpg')";
 
     }
